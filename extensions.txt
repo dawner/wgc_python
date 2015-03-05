@@ -1,31 +1,52 @@
 Extensions:
 _______
 
-1. At the moment your program is case sensitive.
-That is if the user guesses an uppercase 'A' its not going to count as a correct 'a' guess. Fix it so 'A' and 'a' count as the same guess!
-(hint: you may need the string method "string".lower(): https://docs.python.org/2/library/stdtypes.html#str.lower)
+1. At the moment your program is case sensitive,
+so if the user guesses an uppercase 'A' it's not
+going to count as a correct 'a' guess.
+Fix it so 'A' and 'a' count as the same guess!
+
+(hint: you may need the string method "string".lower():
+https://docs.python.org/2/library/stdtypes.html#str.lower)
 
 _______
 
-2. If the user tries to guess a letter they've guessed before, print something out telling them this.
+2. If the user tries to guess a letter they've guessed before,
+print something out telling them this.
 
 _______
 
-3. We're feeling nice today, so also modify the program so that the user doesn't lose one of their guesses when they guess something they've guessed before.
+3. We're feeling nice today, so also modify the program so that
+the user doesn't lose one of their guesses when they guess
+something they've guessed before.
 
-(hint: you made need to use the 'continue' keyword. 'continue' is similar to 'break' in that it doesn't continue they current loop iteration, but rather than leaving the loop altogether, like break, it will continue from the next loop iteration. See more here: https://docs.python.org/2/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops)
-
-_______
-
-4. If the user doesn't choose a letter but just presses enter, or if they enter more than one letter, we still enter the loop, do all our checks and print stuff out. It would be better if we instead printed out a message
-"Guess must be a single letter! Try again.\n" until the user successfully enters a letter"
-
-(hint #1: you may need another loop to achieve this inside your while loop.)
-(hint #2: you may also need to use the len() method: https://docs.python.org/2/library/functions.html#len)
+(hint: you made need to use the 'continue' keyword.
+'continue' is similar to 'break'. It stops executing the current
+loop iteration and continues from the next loop iteration.
+See more here:
+https://docs.python.org/2/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops)
 
 _______
 
-5. Extend step 3 to also ensure the player can only guess alphabetic letters and not numbers or special characters (eg '.', '$', '%' etc)
-(hint: have a look at the isalpha() method: https://docs.python.org/2/library/stdtypes.html#str.isalpha)
+4. If the user doesn't choose a letter but just presses enter,
+or if they type more than one letter before hitting enter,
+we still enter the loop, do all our checks and print stuff out.
+It would be better if we instead printed out a message until the
+user successfully enters a letter.
+
+"Guess must be a single letter! Try again.\n"
+
+(hint #1: you may also need to use the len() method:
+https://docs.python.org/2/library/functions.html#len)
+
+(hint #2: you may need another loop to achieve this inside your while loop.)
+
+_______
+
+5. Extend step 3 to also ensure the player can only guess alphabetic letters
+and not numbers or special characters (eg '.', '$', '%' etc)
+
+(hint: have a look at the isalpha() method:
+https://docs.python.org/2/library/stdtypes.html#str.isalpha)
 
 _______
