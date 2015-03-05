@@ -1,10 +1,20 @@
-# Hangman sample program for Wellington Girls College 2015
+#!/usr/bin/env python
+
+"""hangman.py: solution for Wellington Girls College Demo 2015
+
+Slides: https://docs.google.com/a/abletech.co.nz/presentation/d/1tVadynIVDnsYBM7KmCrbJyVy6CGi0iYRFRAUjU7OVqk/
+
+"""
+
+__author__      = "Dawn Richardson"
 
 import random
 
 words_file = open("words.txt", 'r') # Open a file
 file_contents = words_file.read() # Read the file
-word_array = file_contents.split("\n") # Break it up into a list
+words_file.close() # Close the file now that we're done with it
+
+word_array = file_contents.split("\n") # Break file contents up into a list
 
 computer_word = random.choice(word_array) # Pick a random word from the list
 
